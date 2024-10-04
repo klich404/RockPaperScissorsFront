@@ -1,1 +1,102 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Fondo claro */
+    color: #333; /* Color de texto */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Cambiar a flex-start para evitar el centrado vertical */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+  }
+  
+  /* Contenedor principal */
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4CAF50; /* Color verde para el título */
+    text-align: center; /* Centramos solo el título */
+  }
+  
+  /* Estilo del formulario */
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold; /* Negrita */
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 2px solid #4CAF50; /* Borde verde */
+    border-radius: 5px;
+    width: 200px; /* Ancho del input */
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo de los botones */
+  button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave */
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Color más oscuro al pasar el ratón */
+  }
+  
+  /* Estilo del mensaje de bienvenida */
+  .welcome-message, .round-result-message {
+    position: fixed;
+    top: 50%; /* 50% desde la parte superior */
+    left: 50%; /* 50% desde la izquierda */
+    transform: translate(-50%, -50%); /* Centrar el elemento */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con 70% de transparencia */
+    color: white;
+    padding: 20px 40px; /* Aumentar el padding para hacerlo más grande */
+    border-radius: 8px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto de profundidad */
+    text-align: center; /* Centramos el texto dentro del mensaje */
+    font-size: 1.5em; /* Aumentar el tamaño de la fuente */
+    width: 300px; /* Ancho fijo del mensaje */
+    max-width: 90%; /* Asegúrate de que no sobrepase el ancho de la pantalla */
+  }
+  
+  
+  
+  /* Estilo de los nombres de los jugadores */
+  h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  /* Estilo para el contenedor de jugadores */
+  .player-container {
+    margin-top: 20px;
+    text-align: center; /* Centrar texto */
+  }
+  
+  /* Estilos para el botón de reinicio */
+  button.restart {
+    background-color: #ff5722; /* Color rojo */
+  }
+  
+  button.restart:hover {
+    background-color: #e64a19; /* Color más oscuro al pasar el ratón */
+  }
+  
+  /* Alineación de todo el contenido */
+  .container {
+    margin-top: 50px; /* Margen superior para mover el contenido hacia arriba */
+    text-align: center; /* Alinear todo el contenido al centro */
+  }
+
+  
+  
