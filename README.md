@@ -1,4 +1,4 @@
-# # RockPaperScissorsFront
+# RockPaperScissorsFront
 
 RockPaperScissorsFront es la aplicación frontend del juego "Piedra, Papel o Tijera". Este proyecto está construido con Angular y permite a los jugadores interactuar con la API del juego.
 
