@@ -90,11 +90,11 @@ export class AppComponent {
 
   playRound() {
     if (this.currentTurn === 1) {
-        // Lógica para el Jugador 1 seleccionando movimiento
+        // Jugador 1 seleccionando movimiento
         this.gameStartedMessage = "Jugador 1, elige tu movimiento.";
         return;
     } else if (this.currentTurn === 2) {
-        // Lógica para el Jugador 2 seleccionando movimiento
+        // Jugador 2 seleccionando movimiento
         if (!this.gameID || !this.player1Move || !this.player2Move) {
             this.gameStartedMessage = "Debes seleccionar movimientos para ambos jugadores.";
             return;
@@ -108,7 +108,6 @@ export class AppComponent {
         this.http.post<any>(`${this.APIUrl}/Round`, formData)
             .subscribe(response => {
                 this.gameStartedMessage = response.message;
-                // Aquí puedes actualizar la lógica para mostrar el resultado de la ronda
                 this.currentTurn = 1; // Volver al turno del Jugador 1
             }, error => {
                 this.gameStartedMessage = error.error.message;
@@ -117,8 +116,8 @@ export class AppComponent {
   }
 
   selectPlayer1Move(event: Event) {
-    const selectElement = event.target as HTMLSelectElement; // Afirmación de tipo
-    this.player1Move = selectElement.value; // Ahora TypeScript reconoce value
+    const selectElement = event.target as HTMLSelectElement;
+    this.player1Move = selectElement.value;
     this.currentTurn = 2; // Cambia al turno del Jugador 2
   }
 }

@@ -7,8 +7,8 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Cambiar a flex-start para evitar el centrado vertical */
-    height: 100vh; /* Ocupa toda la altura de la ventana */
+    align-items: flex-start; 
+    height: 100vh;
   }
   
   /* Contenedor principal */
@@ -65,7 +65,7 @@ body {
     text-align: center; /* Centramos el texto dentro del mensaje */
     font-size: 1.5em; /* Aumentar el tamaño de la fuente */
     width: 300px; /* Ancho fijo del mensaje */
-    max-width: 90%; /* Asegúrate de que no sobrepase el ancho de la pantalla */
+    max-width: 90%;
   }
   
   
